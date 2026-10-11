@@ -1,0 +1,686 @@
+{
+  "assets/img/kontakt-hero.jpg": {
+    "width": 1509,
+    "height": 1042,
+    "alt": "Begrüßung in einer hellen Lobby mit großem Hochformat-Display",
+    "version": "cd401eb4761d"
+  },
+  "assets/img/kontakt-seite.jpg": {
+    "width": 1484,
+    "height": 1060,
+    "alt": "Büro mit Hochformat-Display und Waldmotiv neben dem Fenster, davor Schreibtisch und geschlossener Laptop",
+    "version": "0fba145b8c23"
+  },
+  "assets/img/kontakt-beratung.jpg": {
+    "width": 1810,
+    "height": 869,
+    "alt": "Beratungsgespräch am Tisch, im Hintergrund ein großes Display",
+    "version": "d098099c0194"
+  },
+  "assets/img/faq/faq-hero.jpg": {
+    "width": 1565,
+    "height": 1005,
+    "alt": "Hochformat-Display mit Bergmotiv in einem hellen Büro, davor Laptop und Notizbuch",
+    "version": "3f1cf0cb7c9b"
+  },
+  "assets/img/content_creation/cc-hero.jpg": {
+    "width": 1706,
+    "height": 922,
+    "alt": "Hochformat-Display mit Food-Motiv, großes Querformat-Display mit Markenmotiv und ein Laptop mit Schnittprogramm",
+    "version": "b90a8f274d50"
+  },
+  "assets/img/content_creation/cc-menueboards.jpg": {
+    "width": 1161,
+    "height": 1355,
+    "alt": "Mehrteiliges Menüboard mit Bowls über einer Restaurant-Theke",
+    "version": "78143371929a"
+  },
+  "assets/img/content_creation/cc-food-visuals.jpg": {
+    "width": 1161,
+    "height": 1354,
+    "alt": "Nahaufnahme einer Bowl mit Gemüse und frischen Kräutern",
+    "version": "168ed15fc91e"
+  },
+  "assets/img/content_creation/cc-aktionen.jpg": {
+    "width": 1161,
+    "height": 1354,
+    "alt": "Werbestele mit Sommer-Aktion und Orangen in einem Einkaufszentrum",
+    "version": "66bd6e535a2f"
+  },
+  "assets/img/content_creation/cc-markenloops.jpg": {
+    "width": 1161,
+    "height": 1354,
+    "alt": "Hochformat-Display mit blau-grauem abstraktem Motiv an einer Bürowand",
+    "version": "02e2c8fb5785"
+  },
+  "assets/img/content_creation/cc-dooh.jpg": {
+    "width": 1161,
+    "height": 1354,
+    "alt": "Digitale Außenstele mit Café-Kampagne in einer Fußgängerzone",
+    "version": "b23c470f9a03"
+  },
+  "assets/img/content_creation/cc-restaurant.jpg": {
+    "width": 1308,
+    "height": 1202,
+    "alt": "Restaurant-Theke mit vier abgestimmten Menüboards",
+    "version": "fb55131710e0"
+  },
+  "assets/img/content_creation/cc-handel.jpg": {
+    "width": 1569,
+    "height": 1003,
+    "alt": "Werbestele mit Pflanzenmotiv in einer Ladenpassage",
+    "version": "826dbab400fb"
+  },
+  "assets/img/content_creation/cc-stadtinfo.jpg": {
+    "width": 1568,
+    "height": 1003,
+    "alt": "Info-Stele mit Stadtinformationen auf einem Platz in der Innenstadt",
+    "version": "55f490cb4a35"
+  },
+  "assets/img/content_creation/cc-empfang.jpg": {
+    "width": 2007,
+    "height": 784,
+    "alt": "Empfangsbereich mit großem Begrüßungsdisplay hinter dem Tresen",
+    "version": "0b192ce43cc3"
+  },
+  "assets/img/content_creation/cc-bowl.jpg": {
+    "width": 1278,
+    "height": 1230,
+    "alt": "Bowl mit Hähnchen, Gemüse und Kräutern",
+    "version": "38c926ea239c"
+  },
+  "assets/img/content_creation/cc-format-quer.jpg": {
+    "width": 1742,
+    "height": 903,
+    "alt": "Querformat-Display mit blau-grauem abstraktem Motiv an einer hellen Wand",
+    "version": "dd4c774e7ac0"
+  },
+  "assets/img/content_creation/cc-format-hoch.jpg": {
+    "width": 896,
+    "height": 1756,
+    "alt": "Hochformat-Display an einer hellen Wand mit demselben blau-grauen abstrakten Motiv",
+    "version": "e06272e2566c"
+  },
+  "assets/img/content_creation/cc-format-led.jpg": {
+    "width": 1600,
+    "height": 983,
+    "alt": "Breites LED-Display in einem Besprechungsraum mit demselben blau-grauen abstrakten Motiv",
+    "version": "c07b6ba24637"
+  },
+  "assets/img/content_creation/cc-vorher.jpg": {
+    "width": 1967,
+    "height": 800,
+    "alt": "Drei Menüboards über derselben Restauranttheke mit uneinheitlichen Hintergründen und Speisenmotiven",
+    "version": "b3b27f53c6e3"
+  },
+  "assets/img/content_creation/cc-nachher.jpg": {
+    "width": 2035,
+    "height": 773,
+    "alt": "Dieselben drei Menüboards über derselben Restauranttheke mit abgestimmten hellen Hintergründen und Speisenmotiven",
+    "version": "a0d9623c814c"
+  },
+  "assets/img/installation/montage-hero-menueboards.jpg": {
+    "width": 1655,
+    "height": 950,
+    "alt": "Drei bündig montierte Menüboards über einer Restauranttheke, rechts ein Techniker mit Tablet",
+    "version": "f4ab8f66c7a9"
+  },
+  "assets/img/installation/beispiel-restaurant-menueboards.jpg": {
+    "width": 1358,
+    "height": 1158,
+    "alt": "Drei ausgerichtete Menüboards über einer Restauranttheke",
+    "version": "5ad8891f2cad"
+  },
+  "assets/img/installation/beispiel-eingang-stele.jpg": {
+    "width": 1356,
+    "height": 1159,
+    "alt": "Digitale Stele im gläsernen Eingangsbereich eines Geschäfts",
+    "version": "fe13b66be82b"
+  },
+  "assets/img/installation/beispiel-outdoor-stele.jpg": {
+    "width": 1355,
+    "height": 1161,
+    "alt": "Digitale Info-Stele auf einem Platz in der Innenstadt",
+    "version": "700704f774f4"
+  },
+  "assets/img/installation/beispiel-empfang-videowand.jpg": {
+    "width": 1358,
+    "height": 1158,
+    "alt": "Videowand aus vier Displays hinter einem Empfangstresen",
+    "version": "e26cfa0bb848"
+  },
+  "assets/img/installation/befestigung-wand.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "alt": "Flaches Display an einer hellen Wand montiert",
+    "version": "48742aad1bef"
+  },
+  "assets/img/installation/befestigung-decke.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "alt": "Display an zwei Deckenstangen abgehängt",
+    "version": "46e485810781"
+  },
+  "assets/img/installation/befestigung-stele.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "alt": "Freistehende digitale Stele in einer hellen Halle",
+    "version": "66279188b538"
+  },
+  "assets/img/installation/befestigung-outdoor.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "alt": "Digitale Stele im Außenbereich auf festem Sockel",
+    "version": "abf399621c9b"
+  },
+  "assets/img/installation/befestigung-multiscreen.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "alt": "Vier Menüboards in einer Reihe über einer Theke",
+    "version": "d87f31e0a8e4"
+  },
+  "assets/img/installation/montage-wasserwaage.jpg": {
+    "width": 1614,
+    "height": 974,
+    "alt": "Techniker richtet eine Wandhalterung mit der Wasserwaage aus, daneben ein Tablet mit Grundriss",
+    "version": "2898b272a15a"
+  },
+  "assets/img/installation/vergleich-vorher.jpg": {
+    "width": 1823,
+    "height": 863,
+    "alt": "Vorher: drei ungleich hoch montierte Displays, Kabel hängen sichtbar von der Decke und an der Wand",
+    "version": "ed0f7d600614"
+  },
+  "assets/img/installation/vergleich-nachher.jpg": {
+    "width": 1823,
+    "height": 863,
+    "alt": "Nachher: drei bündig nebeneinander montierte Menüboards ohne sichtbare Kabel",
+    "version": "0f865b146abe"
+  },
+  "assets/img/wartung/wartung-hero.jpg": {
+    "width": 1519,
+    "height": 1035,
+    "alt": "Servicetechniker kontrolliert die Wartungsklappe einer digitalen Außenstele",
+    "version": "6632275ab832"
+  },
+  "assets/img/wartung/wartung-fernwartung.jpg": {
+    "width": 1345,
+    "height": 1169,
+    "alt": "Supportmitarbeiterin hilft am Telefon, vor ihr ein Laptop",
+    "version": "bd066d3fc3cb"
+  },
+  "assets/img/wartung/wartung-stoerung.jpg": {
+    "width": 1345,
+    "height": 1170,
+    "alt": "Techniker prüft ein Anschlusskabel unter einem ausgeschalteten Wanddisplay",
+    "version": "3ae2a0aa159c"
+  },
+  "assets/img/wartung/wartung-inhalte.jpg": {
+    "width": 1345,
+    "height": 1169,
+    "alt": "Drei digitale Menüboards mit Speisen und Angeboten",
+    "version": "dba8461078ae"
+  },
+  "assets/img/wartung/wartung-vor-ort.jpg": {
+    "width": 1345,
+    "height": 1169,
+    "alt": "Techniker kontrolliert Gehäuse und Lüftung einer digitalen Stele mit einer Taschenlampe",
+    "version": "d6691edac082"
+  },
+  "assets/img/wartung/wartung-pflege.jpg": {
+    "width": 1345,
+    "height": 1170,
+    "alt": "Hand reinigt einen ausgeschalteten Bildschirm mit einem Mikrofasertuch",
+    "version": "ae9280020a22"
+  },
+  "assets/img/wartung/wartung-fernwartung-gross.jpg": {
+    "width": 1882,
+    "height": 836,
+    "alt": "Supportmitarbeiter mit Headset hilft am Telefon und macht Notizen",
+    "version": "7689649d3cd6"
+  },
+  "assets/img/wartung/wartung-restaurant.jpg": {
+    "width": 1121,
+    "height": 1403,
+    "alt": "Drei Menüboards über der Theke eines Restaurants",
+    "version": "12ccccba9b3f"
+  },
+  "assets/img/wartung/wartung-handel.jpg": {
+    "width": 1121,
+    "height": 1403,
+    "alt": "Hochformat-Display im Eingangsbereich eines Supermarkts",
+    "version": "8ec7ca045de1"
+  },
+  "assets/img/wartung/wartung-aussen.jpg": {
+    "width": 1121,
+    "height": 1403,
+    "alt": "Digitale Stele auf einem belebten Platz mit Bäumen",
+    "version": "9145a8d6b1a4"
+  },
+  "assets/img/wartung/wartung-standorte.jpg": {
+    "width": 1121,
+    "height": 1403,
+    "alt": "Digitale Stele im hellen Foyer eines Bürogebäudes",
+    "version": "7e0e62d751c0"
+  },
+  "assets/img/wartung/wartung-wartungsbesuch.jpg": {
+    "width": 1272,
+    "height": 1237,
+    "alt": "Servicetechniker reinigt ein ausgeschaltetes Außendisplay mit einem Mikrofasertuch",
+    "version": "f859d061784e"
+  },
+  "assets/img/dooh/dooh-hero.jpg": {
+    "width": 1614,
+    "height": 974,
+    "alt": "Digitale Werbestele mit einem Café-Motiv für Kaffee und Croissant in einem hellen Einkaufsbereich",
+    "version": "a12e1d6a2905"
+  },
+  "assets/img/dooh/dooh-werbetreibende.jpg": {
+    "width": 1385,
+    "height": 1136,
+    "alt": "Werbestele im Hochformat in einem Geschäft, Passant im Vorbeigehen",
+    "version": "64bb8e7732eb"
+  },
+  "assets/img/dooh/dooh-standortpartner.jpg": {
+    "width": 1385,
+    "height": 1136,
+    "alt": "Digitale Werbestele im Eingangsbereich eines Lebensmittelmarkts mit Einkaufswagen und Kundschaft",
+    "version": "c144254dfa8c"
+  },
+  "assets/img/dooh/dooh-werbung-supermarkt.jpg": {
+    "width": 1128,
+    "height": 1394,
+    "alt": "Kundin mit Einkaufstaschen vor einer digitalen Werbestele",
+    "version": "0735c2c02cc1"
+  },
+  "assets/img/dooh/dooh-motiv-formate.jpg": {
+    "width": 1900,
+    "height": 828,
+    "alt": "Dasselbe Café-Motiv auf einem Screen im Hochformat und einem im Querformat",
+    "version": "0cf423c60716"
+  },
+  "assets/img/dooh/dooh-standort-eingangshalle.jpg": {
+    "width": 1611,
+    "height": 976,
+    "alt": "Eingangsbereich eines Lebensmittelmarkts mit Einkaufswagen, Kundschaft und digitaler Werbestele",
+    "version": "4a7ea9232dd3"
+  },
+  "assets/img/dooh/dooh-ort-supermarkt.jpg": {
+    "width": 1582,
+    "height": 994,
+    "alt": "Eingang eines Lebensmittelmarkts mit digitaler Werbestele",
+    "version": "55e7478ce37f"
+  },
+  "assets/img/dooh/dooh-ort-passage.jpg": {
+    "width": 1582,
+    "height": 994,
+    "alt": "Ladenpassage in einem Einkaufszentrum mit Werbestele und Passanten",
+    "version": "ed349c412b92"
+  },
+  "assets/img/dooh/dooh-ort-gastronomie.jpg": {
+    "width": 1577,
+    "height": 997,
+    "alt": "Restauranttheke mit Gästen und Personal, darüber digitale Screens",
+    "version": "dea359f8b874"
+  },
+  "assets/img/dooh/dooh-ort-innenstadt.jpg": {
+    "width": 1582,
+    "height": 994,
+    "alt": "Fußgängerzone mit digitaler Werbestele",
+    "version": "dae44e6d7c5b"
+  },
+  "assets/img/dooh/dooh-ort-handel.jpg": {
+    "width": 1581,
+    "height": 995,
+    "alt": "Modegeschäft mit Werbestele im Hochformat",
+    "version": "268a0ab937f8"
+  },
+  "assets/img/dooh/dooh-inhalte-stele.jpg": {
+    "width": 1307,
+    "height": 1203,
+    "alt": "Werbestele im Hochformat mit einem Motiv für Kaffee und Croissant",
+    "version": "82e7089e53be"
+  },
+  "assets/img/partner/partner-hero.jpg": {
+    "width": 1499,
+    "height": 1049,
+    "alt": "Digitale Werbestele mit Kaffeewerbung im hellen Eingangsbereich eines Supermarkts",
+    "version": "32e7d80af550"
+  },
+  "assets/img/partner/partner-betrieb.jpg": {
+    "width": 1714,
+    "height": 918,
+    "alt": "Techniker prüft den seitlichen Servicezugang einer digitalen Stele",
+    "version": "69bda7de2751"
+  },
+  "assets/img/partner/standort-supermarkt.jpg": {
+    "width": 1752,
+    "height": 898,
+    "alt": "Werbestele im hellen Eingangsbereich eines Supermarkts neben der Obstauslage",
+    "version": "6925438e8a32"
+  },
+  "assets/img/partner/standort-fitness.jpg": {
+    "width": 1752,
+    "height": 898,
+    "alt": "Hochformat-Screen am Empfang eines Fitnessstudios",
+    "version": "fe0dcfdaf44a"
+  },
+  "assets/img/partner/standort-tankstelle.jpg": {
+    "width": 1752,
+    "height": 898,
+    "alt": "Werbescreen im Shop einer Tankstelle neben der Kaffeetheke",
+    "version": "09c36271e73b"
+  },
+  "assets/img/partner/standort-buero.jpg": {
+    "width": 1752,
+    "height": 897,
+    "alt": "Großes Hochformat-Display im Eingangsbereich eines Einzelhandelsgeschäfts",
+    "version": "0147f9948db4"
+  },
+  "assets/img/partner/standort-apotheke.jpg": {
+    "width": 1752,
+    "height": 898,
+    "alt": "Hochformat-Screen in einer hellen Apotheke",
+    "version": "197a7c3f9712"
+  },
+  "assets/img/partner/standort-stadt.jpg": {
+    "width": 1752,
+    "height": 897,
+    "alt": "Freistehende digitale Stele auf einem belebten Platz in der Innenstadt",
+    "version": "e7c2766f52c9"
+  },
+  "assets/img/partner/platzierung-vorher.jpg": {
+    "width": 1681,
+    "height": 936,
+    "alt": "Eingangsbereich mit leerer Holzwand neben der Glasfront",
+    "version": "153c7cfd0302"
+  },
+  "assets/img/partner/platzierung-nachher.jpg": {
+    "width": 1681,
+    "height": 936,
+    "alt": "Derselbe Eingangsbereich mit einer digitalen Werbestele vor der Holzwand",
+    "version": "2bd9dce76bdc"
+  },
+  "assets/img/partner/inhalte-screen.jpg": {
+    "width": 1208,
+    "height": 1302,
+    "alt": "Hochformat-Display mit Bergmotiv neben einer Pflanze in einem Ladeneingang",
+    "version": "6af7baea71e1"
+  },
+  "assets/img/partner/rotation-werbung.jpg": {
+    "width": 1437,
+    "height": 1094,
+    "alt": "Werbemotiv mit Kaffee und Croissant",
+    "version": "4f6d59c96c8c"
+  },
+  "assets/img/partner/rotation-standort.jpg": {
+    "width": 1438,
+    "height": 1093,
+    "alt": "Ladeneingang mit schlichter Verkaufstheke",
+    "version": "35d7b1582761"
+  },
+  "assets/img/partner/rotation-hinweise.jpg": {
+    "width": 1437,
+    "height": 1094,
+    "alt": "Bergtal mit Wiese, Bach und Wanderweg",
+    "version": "8be3f7934df0"
+  },
+  "assets/img/referenzen/hero-foyer.jpg": {
+    "width": 1931,
+    "height": 814,
+    "alt": "Visualisierung: Foyer mit großem Wanddisplay hinter dem Empfang",
+    "version": "e238b33073f8"
+  },
+  "assets/img/referenzen/hero-gastronomie.jpg": {
+    "width": 1759,
+    "height": 894,
+    "alt": "Visualisierung: Restauranttheke mit drei Menüboards für Bowls, Suppen und Getränke",
+    "version": "7b0da6866b0e"
+  },
+  "assets/img/referenzen/hero-event.jpg": {
+    "width": 1793,
+    "height": 877,
+    "alt": "Visualisierung: LED-Wand auf einer Eventbühne",
+    "version": "04072d539096"
+  },
+  "assets/img/referenzen/einsatz-eingang.jpg": {
+    "width": 1659,
+    "height": 948,
+    "alt": "Visualisierung: Hochformat-Werbestele im gläsernen Eingangsbereich eines Marktes",
+    "version": "1eacaf6911ba"
+  },
+  "assets/img/referenzen/einsatz-markt.jpg": {
+    "width": 1658,
+    "height": 949,
+    "alt": "Visualisierung: Hochformat-Screen mit Obstmotiv neben der Obst- und Gemüseabteilung",
+    "version": "98b9e5e597bf"
+  },
+  "assets/img/referenzen/einsatz-theke.jpg": {
+    "width": 1658,
+    "height": 949,
+    "alt": "Visualisierung: Imbisstheke mit drei digitalen Menüboards für Wrap, Salat und Getränke",
+    "version": "918936b1b3eb"
+  },
+  "assets/img/referenzen/einsatz-event.jpg": {
+    "width": 1658,
+    "height": 949,
+    "alt": "Visualisierung: Große LED-Wand auf einer Konferenzbühne vor Publikum",
+    "version": "69382264dff0"
+  },
+  "assets/img/referenzen/einsatz-stadt.jpg": {
+    "width": 1658,
+    "height": 949,
+    "alt": "Visualisierung: Digitale Stele mit Stadtparkmotiv auf einem Innenstadtplatz",
+    "version": "982d94a33e3e"
+  },
+  "assets/img/referenzen/einsatz-buero.jpg": {
+    "width": 1658,
+    "height": 949,
+    "alt": "Visualisierung: Besprechungsraum mit interaktivem Wanddisplay und Organigramm",
+    "version": "c33752b7787c"
+  },
+  "assets/img/referenzen/einsatz-filialen.jpg": {
+    "width": 1658,
+    "height": 949,
+    "alt": "Visualisierung: Bäckerei- und Kaffeetheke mit zwei digitalen Displays für Frühstück und Kaffee",
+    "version": "76d87c831cde"
+  },
+  "assets/img/referenzen/einsatz-fassade.jpg": {
+    "width": 1658,
+    "height": 949,
+    "alt": "Visualisierung: Großer LED-Screen mit Gemüsebild an der Fassade eines Einzelhandelsgeschäfts",
+    "version": "a5eee16c4d77"
+  },
+  "assets/img/referenzen/einsatz-showroom.jpg": {
+    "width": 1658,
+    "height": 949,
+    "alt": "Visualisierung: Videowand aus vier Displays in einem hellen Showroom",
+    "version": "ed0035337609"
+  },
+  "assets/img/referenzen/menueboards-theke.jpg": {
+    "width": 1821,
+    "height": 864,
+    "alt": "Visualisierung: Imbisstheke mit drei digitalen Menüboards für Döner, Falafel und Salat",
+    "version": "b1af08c18dad"
+  },
+  "assets/img/referenzen/ablauf-vorher.jpg": {
+    "width": 1346,
+    "height": 1168,
+    "alt": "Visualisierung: Drei gerahmte gedruckte Speisenplakate für Döner, Falafel und Salat über derselben Imbisstheke",
+    "version": "784631b1485f"
+  },
+  "assets/img/referenzen/ablauf-montage.jpg": {
+    "width": 1346,
+    "height": 1168,
+    "alt": "Visualisierung: Drei montierte, noch ausgeschaltete Hochformat-Displays über derselben Imbisstheke",
+    "version": "6f10d5efb623"
+  },
+  "assets/img/referenzen/ablauf-fertig.jpg": {
+    "width": 1347,
+    "height": 1168,
+    "alt": "Visualisierung: Dieselben drei Hochformat-Displays mit Speisenbildern, Bezeichnungen und Beispielpreisen",
+    "version": "e6a67863907d"
+  },
+  "assets/img/referenzen/ablauf-content.jpg": {
+    "width": 1346,
+    "height": 1168,
+    "alt": "Visualisierung: Nahaufnahme eines digitalen Menüboards mit Speisenbild und Beschriftung",
+    "version": "822f84e0390a"
+  },
+  "assets/img/referenzen/hyads-innen.jpg": {
+    "width": 1193,
+    "height": 1318,
+    "alt": "Visualisierung: Werbestele mit Croissant- und Orangensaftmotiv in einer Einkaufspassage",
+    "version": "b706b90bc130"
+  },
+  "assets/img/referenzen/hyads-aussen.jpg": {
+    "width": 1064,
+    "height": 1478,
+    "alt": "Visualisierung: Werbestele im Außenbereich",
+    "version": "107bba31bd14"
+  },
+  "assets/img/start/after.jpg": {
+    "width": 1600,
+    "height": 900,
+    "alt": "Nachher: dieselbe Theke mit drei digitalen Menüboards",
+    "version": "9db08e84f3b7"
+  },
+  "assets/img/start/before.jpg": {
+    "width": 1600,
+    "height": 900,
+    "alt": "Vorher: Restaurant-Theke mit gedruckten Menütafeln und handschriftlichen Preiskorrekturen",
+    "version": "ea3e60d32706"
+  },
+  "assets/img/start/content.jpg": {
+    "width": 1600,
+    "height": 700,
+    "alt": "Digitales Menüboard und zentrale Content-Verwaltung am Laptop",
+    "version": "06eb79310392"
+  },
+  "assets/img/start/dooh.jpg": {
+    "width": 1600,
+    "height": 1120,
+    "alt": "Digitale Werbestele auf einem belebten Stadtplatz",
+    "version": "20be154d6890"
+  },
+  "assets/img/start/eco-content.jpg": {
+    "width": 700,
+    "height": 875,
+    "alt": "Bildschirm mit gestaltetem Content",
+    "version": "eee8f0eb6ced"
+  },
+  "assets/img/start/eco-hardware.jpg": {
+    "width": 700,
+    "height": 875,
+    "alt": "Hochformat-Display und Stele als Beispiel für Display-Hardware",
+    "version": "7b02899b60f0"
+  },
+  "assets/img/start/eco-install.jpg": {
+    "width": 700,
+    "height": 875,
+    "alt": "Techniker montiert ein Display an der Wand",
+    "version": "cc76f938b6ad"
+  },
+  "assets/img/start/eco-support.jpg": {
+    "width": 800,
+    "height": 800,
+    "alt": "Display mit Inhalten, die per Nachricht aktualisiert werden",
+    "version": "f8ec559f5fae"
+  },
+  "assets/img/start/hero.jpg": {
+    "width": 2400,
+    "height": 1350,
+    "alt": "Große Digital-Signage-Wand in einem hellen Atrium",
+    "version": "dd3ca8000b0d"
+  },
+  "assets/img/start/marken/bam-bam-kebup.jpg": {
+    "width": 1200,
+    "height": 1200,
+    "alt": "BAM BAM KEB’UP",
+    "version": "d52c9bef9dd9"
+  },
+  "assets/img/start/marken/boss.jpg": {
+    "width": 1100,
+    "height": 805,
+    "alt": "BOSS",
+    "version": "0d64c2680ad0"
+  },
+  "assets/img/start/marken/clever-fit.jpg": {
+    "width": 595,
+    "height": 595,
+    "alt": "clever fit",
+    "version": "8023213b763c"
+  },
+  "assets/img/start/marken/edeka.jpg": {
+    "width": 1080,
+    "height": 607,
+    "alt": "EDEKA",
+    "version": "10e98a1daedf"
+  },
+  "assets/img/start/marken/haus-des-doeners.jpg": {
+    "width": 1600,
+    "height": 545,
+    "alt": "Das Haus des Döners",
+    "version": "0f7805af4bcc"
+  },
+  "assets/img/start/marken/k-beautyhouse.jpg": {
+    "width": 313,
+    "height": 313,
+    "alt": "K Beautyhouse",
+    "version": "45a6c465b538"
+  },
+  "assets/img/start/marken/loewen-frankfurt.jpg": {
+    "width": 1040,
+    "height": 970,
+    "alt": "Löwen Frankfurt",
+    "version": "0176a7178546"
+  },
+  "assets/img/start/marken/mercedes-benz.jpg": {
+    "width": 576,
+    "height": 144,
+    "alt": "Mercedes-Benz",
+    "version": "cb8a59213d42"
+  },
+  "assets/img/start/marken/rewe.jpg": {
+    "width": 600,
+    "height": 600,
+    "alt": "REWE",
+    "version": "853d0d1915e7"
+  },
+  "assets/img/start/sol-automotive.jpg": {
+    "width": 1200,
+    "height": 675,
+    "alt": "Autohaus in der Abenddämmerung mit Outdoor-LED-Stele am Eingang und großem Showroom-Display hinter der Glasfassade",
+    "version": "c9119969446e"
+  },
+  "assets/img/start/sol-education.jpg": {
+    "width": 1200,
+    "height": 675,
+    "alt": "Seminarraum, in dem eine Dozentin am interaktiven Whiteboard präsentiert, mit einem Info-Display neben der Tür",
+    "version": "9db89b9ee3ad"
+  },
+  "assets/img/start/sol-healthcare.jpg": {
+    "width": 1200,
+    "height": 675,
+    "alt": "Heller Empfangsbereich einer Praxis mit integrierter LED-Wand und einem Hochformat-Display hinter dem Tresen",
+    "version": "87f26dad3d7e"
+  },
+  "assets/img/start/sol-led-lcd.jpg": {
+    "width": 1200,
+    "height": 675,
+    "alt": "Veranstaltungssaal mit großer LED-Wand auf der Bühne, freistehenden Displays und einer Videowall",
+    "version": "3f0426d2d0af"
+  },
+  "assets/img/start/sol-restaurant.jpg": {
+    "width": 1200,
+    "height": 675,
+    "alt": "Restaurant mit drei digitalen Menüboards über der Theke, einem Hochformat-Display im Schaufenster und einem Gast am Bestellterminal",
+    "version": "8a6df97eedc1"
+  },
+  "assets/img/start/sol-retail.jpg": {
+    "width": 1200,
+    "height": 675,
+    "alt": "Moderner Laden mit Displays am Regal, einer Videowall und Hochformat-Screens im Schaufenster",
+    "version": "1360a13114f1"
+  }
+}

@@ -1,0 +1,13 @@
+# Not part of the public website: page sources, build scripts, docs and config.
+# Patterns start with "/" so that only the top-level items match (assets/css/pages/ must stay public).
+/.git
+/.gitignore
+/.assetsignore
+/wrangler.jsonc
+/.wrangler
+/node_modules
+/pages
+/_*.py
+/__pycache__
+/README.md
+.DS_Store

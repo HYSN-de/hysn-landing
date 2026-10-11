@@ -1,0 +1,236 @@
+/* FAQ page (faq/index.html): search with quick links, sticky topic sidebar, eight accordion groups, direct help strip. */
+.faq-vh{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.faq-main [hidden],.faq-find [hidden]{display:none!important}
+
+/* hero: same component as Kontakt, a little shorter because it has no buttons */
+.faq-hero{min-height:640px}
+.faq-hero h1{font-size:clamp(40px,3.6vw,72px)}
+/* one block per line, so phones balance each line on its own (no lone "Schritt.") */
+.faq-hero h1 span{display:block;width:fit-content}
+.faq-hero .lead{margin-bottom:30px;max-width:min(640px,45vw)}
+.faq-hero-for{font-size:17px;color:var(--muted);text-wrap:balance}
+/* Photo crop. The box is 640 px high, so the 1020 x 512 photo is drawn at 1.25x.
+   Below 1600 px the wall lettering (photo x 731-924) stays fully out of frame: a fixed photo x is pinned to the
+   right edge, so the display stays whole at every width. From 1600 px the box is wide enough for both. */
+.faq-hero .chero-img img{object-position:right -385px top 50%}
+@media (min-width:961px) and (max-width:1180px){ .faq-hero .chero-img img{object-position:right -462px top 50%} }
+@media (min-width:1600px){ .faq-hero .chero-img img{object-position:80% 50%} }
+
+/* search field + "Suchen" button, quick links */
+.faq-find{padding:60px 0 0}
+.faq-search{display:flex;gap:18px;height:80px}
+.faq-field{position:relative;flex:1;min-width:0;display:flex;align-items:center;background:#fff;border:1px solid var(--line-strong);border-radius:var(--radius);transition:border-color .2s,box-shadow .2s}
+.faq-field:focus-within{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.faq-field>.ico{position:absolute;left:30px;top:50%;width:30px;height:30px;margin-top:-15px;color:var(--ink);pointer-events:none}
+.faq-field input{flex:1;min-width:0;height:100%;border:0;background:transparent;padding:0 22px 0 84px;font:400 20px/1.3 var(--font);color:var(--ink);outline:none}
+.faq-field input::placeholder{color:var(--soft);opacity:1}
+.faq-field input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;width:18px;height:18px;margin-left:14px;cursor:pointer;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314171c' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M5 5l14 14M19 5 5 19'/%3E%3C/svg%3E") center/18px no-repeat}
+.faq-search .faq-go{flex:none;height:100%;min-width:clamp(168px,12.5vw,240px);justify-content:center;gap:26px;padding:0 30px;font-size:18px}
+.faq-status p{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;margin-top:18px;font-size:17px;color:var(--ink)}
+.faq-quick{display:grid;grid-template-columns:repeat(5,1fr);margin-top:56px;padding-bottom:54px}
+.faq-quick a{display:flex;align-items:flex-start;gap:24px;padding:4px clamp(16px,1.8vw,34px);color:var(--muted);text-decoration:none;font-size:17px;line-height:1.45}
+.faq-quick a:first-child{padding-left:0}
+.faq-quick a+a{border-left:1px solid var(--line)}
+.faq-quick .ico{width:46px;height:46px;stroke-width:1.2;color:var(--ink)}
+.faq-quick b{display:block;font-size:20px;font-weight:500;color:var(--ink);letter-spacing:-.01em;margin-bottom:6px}
+.faq-quick a:hover span{color:var(--ink)}
+.faq-quick a:hover b{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+
+/* topics: sticky sidebar left (about a quarter of the width, as in the concept), all groups right */
+.faq-main{border-top:1px solid var(--line)}
+.faq-main>.wrap{display:grid;grid-template-columns:clamp(272px,26%,380px) minmax(0,1fr);column-gap:clamp(32px,3vw,58px)}
+.faq-side{border-right:1px solid var(--line);padding:76px 0 64px}
+/* The sticky panel never runs below the window: it is sized in height steps below and scrolls on its own as a last resort.
+   The 16 px side padding keeps the nav highlight (which reaches 16 px to the left) inside the scroll box. */
+.faq-side-in{--st:28px;position:sticky;top:calc(var(--head) + var(--st));max-height:calc(100vh - var(--head) - var(--st) - 12px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;margin-left:-16px;padding-left:16px}
+.faq-side-h{font-size:28px;font-weight:500;color:var(--ink);letter-spacing:-.02em;line-height:1.1;margin-bottom:18px}
+.faq-nav{margin-left:-16px}
+.faq-nav ul{list-style:none;margin:0;padding:0}
+.faq-nav a{display:flex;align-items:center;gap:20px;padding:10px 26px;border-left:3px solid transparent;color:var(--text);text-decoration:none;font-size:17.5px;line-height:1.3;transition:background .2s}
+.faq-nav a:hover{background:var(--field);color:var(--ink)}
+.faq-nav a.is-active{background:var(--band-2);border-left-color:var(--ink);color:var(--ink)}
+.faq-nav a.is-empty{color:var(--soft)}
+.faq-nav .ico{width:28px;height:28px;stroke-width:1.3;color:var(--ink)}
+.faq-nav span{flex:1}
+.faq-nav b{font-weight:400;font-size:15.5px;color:var(--muted)}
+.faq-help{margin:24px 20px 0 0;padding-top:24px;border-top:1px solid var(--line)}
+.faq-help-card{background:var(--band);padding:24px 26px 22px}
+.faq-help-h{font-size:24px;font-weight:500;color:var(--ink);letter-spacing:-.015em;line-height:1.2}
+.faq-help-txt{margin-top:8px;font-size:16.5px;color:var(--muted);text-wrap:balance}
+.faq-help-card .btn{margin-top:18px}
+.faq-help-card a:not(.btn){display:flex;align-items:center;gap:16px;margin-top:8px;font-size:17px;color:var(--ink);text-decoration:none}
+.faq-help-card .btn+a{margin-top:16px}
+.faq-help-card a:not(.btn):hover{text-decoration:underline}
+.faq-help-card a .ico{width:22px;height:22px}
+
+.faq-col{padding:66px 0 48px;min-width:0}
+.faq-colhead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px 32px;margin-bottom:34px}
+.faq-colhead p{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 22px;font-size:17px;color:var(--muted)}
+.faq-reset{position:relative;padding:0;border:0;background:none;font:500 16.5px/1.2 var(--font);color:var(--ink);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;cursor:pointer}
+.faq-reset::after{content:"";position:absolute;inset:-12px -4px}
+
+/* groups and questions: row height and gaps follow the concept (rows about 44 px at 1920) */
+.faq-cat{display:grid;grid-template-columns:clamp(60px,4.9vw,94px) minmax(0,1fr);align-items:center;padding:32px 0 28px;border-top:1px solid var(--line)}
+.faq-cat.is-first{border-top:0;padding-top:0}
+.faq-cat>.ico{width:clamp(40px,2.8vw,54px);height:clamp(40px,2.8vw,54px);stroke-width:1.15;color:var(--ink)}
+.faq-cat h3{font-size:clamp(28px,2.2vw,42px);line-height:1.1;letter-spacing:-.025em}
+.faq-list,.faq-more{grid-column:2}
+.faq-list{margin-top:18px}
+.faq-list details{border-bottom:1px solid var(--line)}
+/* --sp is the summary's top padding; icons sit on the first line (centred on a 1.4em line box), also for two-line questions */
+.faq-list summary{--sp:8px;position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding:var(--sp) 26px var(--sp) 44px;list-style:none;cursor:pointer;font-size:19px;line-height:1.4;color:var(--ink);text-wrap:balance;transition:background .2s}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"";flex:none;width:16px;height:16px;margin-top:calc((1.4em - 16px) / 2);background:linear-gradient(var(--ink),var(--ink)) center/16px 1.5px no-repeat,linear-gradient(var(--ink),var(--ink)) center/1.5px 16px no-repeat;transition:transform .42s var(--ease),background-size .42s var(--ease)}
+.faq-list details{transition:background-color .35s}
+.faq-list summary{transition:background-color .25s}
+.faq-list details:not([open]) summary:hover{background:var(--field)}
+.faq-list details[open]:not(.is-closing){background:var(--band-2);border-bottom-color:transparent}
+.faq-list details[open]:not(.is-closing) summary{font-weight:500;padding-bottom:2px}
+.faq-list details[open]:not(.is-closing) summary::before{content:"";position:absolute;left:17px;top:calc(var(--sp) + .7em - 6px);width:8px;height:8px;border:solid var(--ink);border-width:0 1.6px 1.6px 0;transform:rotate(45deg)}
+.faq-list details[open]:not(.is-closing) summary::after{background-size:16px 1.5px,1.5px 0}
+.faq-a{padding:0 clamp(26px,5vw,96px) 16px 44px}
+.faq-a p{font-size:17.5px;line-height:1.55;color:var(--text);max-width:980px}
+.faq-ex{margin-top:12px;padding:10px 16px;background:#fff;border-left:2px solid var(--ink);font-size:16.5px!important}
+.faq-more{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px 40px;margin-top:14px}
+
+/* direct help strip */
+.faq-ask{padding:72px 0;border-top:1px solid var(--line)}
+.faq-ask .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr) minmax(300px,380px);gap:48px;align-items:center}
+.faq-ask .sub{margin-top:18px;max-width:640px}
+.faq-ways a{display:flex;align-items:flex-start;gap:26px;color:var(--muted);text-decoration:none;font-size:19px;line-height:1.4}
+.faq-ways a+a{margin-top:34px}
+.faq-ways a:hover b{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.faq-ways .ico{width:44px;height:44px;stroke-width:1.2;color:var(--ink)}
+.faq-ways b{display:block;font-size:20px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.faq-ask-act .btn{display:flex;width:100%;padding:24px 28px}
+.faq-btn-line{display:flex;align-items:center;justify-content:space-between;gap:22px;margin-top:14px;padding:23px 28px;border:1px solid var(--ink);border-radius:var(--radius);font:500 16.5px/1 var(--font);color:var(--ink);text-decoration:none;transition:background .2s}
+.faq-btn-line:hover{background:var(--band)}
+.faq-btn-line svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6}
+.faq-ask-act .small{margin-top:16px}
+
+/* closing banner: shorter than on Kontakt, button beside the text as in the concept.
+   The ribbon rises from the bottom left, so the note sits under the text (clear of it) and the button alone at mid height.
+   Stacked layouts put the note back under the button. */
+.faq-cta .wrap{padding-top:60px;padding-bottom:60px}
+.faq-cta .cta-text{max-width:none;display:grid;grid-template-columns:auto auto;grid-template-areas:"copy act" "note act";justify-content:start;align-items:center;column-gap:clamp(36px,4vw,72px)}
+.faq-cta-copy{grid-area:copy}
+.faq-cta-act{grid-area:act}
+.faq-cta .cta-text .sub{margin:14px 0 0;max-width:600px;text-wrap:balance}
+.faq-cta .btn{white-space:nowrap}
+.faq-cta .faq-cta-note{grid-area:note;margin-top:14px;text-wrap:balance}
+
+/* wide screens: larger sidebar nav, closer to the concept, wherever the window is tall enough for it */
+@media (min-width:1600px){
+  .faq-nav a{font-size:19px;padding-top:12px;padding-bottom:12px}
+  .faq-nav b{font-size:16.5px}
+}
+@media (min-width:1600px) and (min-height:1020px){
+  .faq-side-h{font-size:32px;margin-bottom:24px}
+  .faq-nav a{padding-top:13px;padding-bottom:13px}
+  .faq-nav .ico{width:32px;height:32px}
+  .faq-help{margin-top:30px;padding-top:30px}
+  .faq-help-card{padding:30px 28px 28px}
+  .faq-help-card .btn{margin-top:22px}
+}
+/* shorter windows: the whole panel down to the phone number stays on screen (checked at 1440 x 789, 1536 x 730, 1366 x 657) */
+@media (min-width:961px) and (max-height:909px){
+  .faq-side-in{--st:22px}
+  .faq-side-h{font-size:26px;margin-bottom:14px}
+  .faq-nav a{padding-top:8px;padding-bottom:8px;font-size:17px}
+  .faq-nav .ico{width:26px;height:26px}
+  .faq-help{margin-top:18px;padding-top:18px}
+  .faq-help-card{padding:20px 22px 18px}
+  .faq-help-h{font-size:21px}
+  .faq-help-txt{margin-top:4px;font-size:15.5px}
+  .faq-help-card .btn{margin-top:14px;padding:14px 20px;font-size:15.5px}
+  .faq-help-card a:not(.btn){margin-top:4px;font-size:16px}
+  .faq-help-card .btn+a{margin-top:12px}
+}
+/* narrower sidebars: tighter nav so every topic stays on one line */
+@media (max-width:1440px){
+  .faq-nav a{gap:14px;padding-left:18px;padding-right:12px;font-size:17px}
+  .faq-nav .ico{width:26px;height:26px}
+  .faq-help-card{padding-left:22px;padding-right:22px}
+  .faq-help-txt{font-size:16px}
+}
+@media (max-width:1280px){
+  .faq-nav a{gap:12px;padding-left:14px;padding-right:10px;font-size:16.5px}
+  .faq-nav .ico{width:24px;height:24px}
+  .faq-nav b{font-size:15px}
+}
+@media (max-width:1180px){
+  .faq-quick a{flex-direction:column;gap:14px}
+  .faq-help{margin-right:14px}
+  .faq-help-card{padding-left:20px;padding-right:20px}
+  .faq-ask .wrap{grid-template-columns:1fr minmax(280px,360px)}
+  .faq-ask-text{grid-column:1/-1}
+  /* here the ribbon reaches the middle of the banner: button below the text, clear of it */
+  .faq-cta .cta-text{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "act" "note"}
+  .faq-cta-act{margin-top:28px}
+}
+/* very short windows (after the width steps, so these smaller sizes win) */
+@media (min-width:961px) and (max-height:753px){
+  .faq-side-in{--st:16px}
+  .faq-side-h{font-size:24px;margin-bottom:10px}
+  .faq-nav a{padding-top:6px;padding-bottom:6px;font-size:16.5px}
+  .faq-nav .ico{width:24px;height:24px}
+  .faq-help{margin-top:14px;padding-top:14px}
+  .faq-help-card{padding:16px 20px 16px}
+  .faq-help-txt{display:none}
+  .faq-help-card .btn{margin-top:12px}
+  .faq-help-card a:not(.btn){margin-top:2px}
+  .faq-help-card .btn+a{margin-top:12px}
+}
+@media (max-width:960px){
+  .faq-hero .lead{max-width:none}
+  .faq-hero .chero-img img{object-position:75% 50%}
+  .faq-quick{grid-template-columns:1fr 1fr;row-gap:0;padding-bottom:40px}
+  .faq-quick a,.faq-quick a+a{flex-direction:row;padding:22px 16px 22px 0;border-left:0;border-top:1px solid var(--line)}
+  .faq-quick a:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}
+  .faq-quick a:last-child:nth-child(odd){grid-column:1/-1}
+  .faq-main>.wrap{grid-template-columns:1fr}
+  .faq-side{border-right:0;padding:56px 0 0}
+  .faq-side-in{position:static;max-height:none;overflow:visible;margin-left:0;padding-left:0}
+  .faq-nav{margin-left:0}
+  .faq-nav ul{display:grid;grid-template-columns:1fr 1fr;column-gap:16px}
+  .faq-nav a{gap:20px;padding:12px 20px 12px 26px;font-size:17.5px}
+  .faq-nav .ico{width:28px;height:28px}
+  .faq-help{display:none}
+  .faq-col{padding-top:56px}
+  .faq-list summary{--sp:10px}
+  .faq-ask .wrap{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  .faq-find{padding-top:48px}
+  .faq-search{height:62px;gap:10px}
+  .faq-field>.ico{left:16px;width:24px;height:24px;margin-top:-12px}
+  .faq-field input{padding:0 8px 0 48px;font-size:17px}
+  .faq-search .faq-go{width:62px;min-width:0;padding:0}
+  .faq-go span{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .faq-go svg{width:20px;height:20px}
+  .faq-quick{grid-template-columns:1fr;margin-top:36px}
+  .faq-quick a,.faq-quick a+a,.faq-quick a:nth-child(even){padding:18px 0;border-left:0}
+  .faq-quick a:first-child{border-top:0}
+  .faq-quick .ico{width:36px;height:36px}
+  .faq-side-h{font-size:26px}
+  .faq-nav ul{grid-template-columns:1fr}
+  .faq-nav a{padding:11px 12px;gap:16px;font-size:17px}
+  .faq-colhead{margin-bottom:30px}
+  .faq-cat{grid-template-columns:44px minmax(0,1fr);padding:36px 0 28px}
+  .faq-cat>.ico{width:32px;height:32px}
+  .faq-cat h3{font-size:26px}
+  .faq-list,.faq-more{grid-column:1/-1}
+  .faq-list{margin-top:20px}
+  .faq-list summary{padding-left:30px;padding-right:4px;gap:16px;font-size:17.5px}
+  .faq-list details[open]:not(.is-closing) summary::before{left:8px}
+  .faq-a{padding:0 16px 18px 30px}
+  .faq-a p{font-size:17px}
+  .faq-more{justify-content:flex-start;gap:12px 28px}
+  .faq-ask{padding:64px 0}
+  .faq-ask-act .btn{padding:20px 24px}
+  .faq-btn-line{padding:19px 24px}
+}
+@media (max-width:360px){
+  .faq-hero h1{font-size:34px}
+  .faq-btn-line{padding-left:18px;padding-right:18px;gap:14px}
+}

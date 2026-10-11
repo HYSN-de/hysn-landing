@@ -1,0 +1,180 @@
+/* Wartung & Betrieb (leistungen/wartung-betrieb/). Page classes start with .wb- ; spacing, .facts, .steps, .ways-grid, .qa and .cta come from site.css. */
+
+/* hero: the photo is shifted per width so the jacket lettering and the sign text are either fully visible or fully out of frame */
+.wb-hero .chero-img img{object-position:24% 50%}
+.wb-hero .chero-text{max-width:min(1000px,calc(48vw - var(--gutter) - 24px))}
+.wb-hero .actions{gap:18px 20px}
+.wb-hero h1 .wb-m{display:none}
+
+/* image cards (service areas and everyday contexts) */
+.wb-cards{display:grid;gap:var(--grid-gap)}
+.wb-cards--5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.wb-cards--4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.wb-card{display:block;text-decoration:none;color:inherit}
+.wb-card-img{display:block;aspect-ratio:340/296;overflow:hidden;border-radius:var(--radius);background:var(--band-2)}
+.wb-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.wb-card:hover .wb-card-img img{transform:scale(1.03)}
+.wb-card-t{display:block;margin-top:24px;font-size:21px;font-weight:500;color:var(--ink);letter-spacing:-.01em;line-height:1.25}
+.wb-card-t svg{display:inline-block;width:17px;height:17px;margin-left:14px;vertical-align:-1px;fill:none;stroke:currentColor;stroke-width:1.6;transition:transform .2s}
+.wb-card:hover .wb-card-t svg{transform:translateX(3px)}
+.wb-card-d{display:block;margin-top:10px;color:var(--muted);font-size:16.5px;line-height:1.5}
+.wb-contexts .wb-card-img{aspect-ratio:4/5}
+
+/* from report to solution: steps, then the ways to reach us */
+.wb-reach{margin-top:var(--head-gap);padding-top:var(--head-gap);border-top:1px solid var(--line)}
+.wb-reach>.eyebrow{margin-bottom:var(--stack)}
+.wb-reach .ways-grid p{margin-bottom:0}
+
+/* remote maintenance: text left; wide photo with the task card over its lower edge */
+.wb-remote .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(48px,5vw,104px);align-items:center}
+.wb-remote-text .sub{margin:var(--stack) 0 var(--head-gap);max-width:640px}
+.wb-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.wb-points>div{padding:2px 24px;border-left:1px solid var(--line-strong)}
+.wb-points>div:first-child{padding-left:0;border-left:0}
+.wb-points .ico{display:block;width:44px;height:44px;stroke-width:1.15;color:var(--ink);margin-bottom:18px}
+.wb-points span{display:block;font-size:17.5px;color:var(--text);line-height:1.4}
+.wb-remote-img{aspect-ratio:550/244;overflow:hidden;border-radius:var(--radius);background:var(--band-2)}
+.wb-remote-img img{width:100%;height:100%;object-fit:cover}
+.wb-remote-list{position:relative;z-index:1;margin:-56px 28px 0;background:#fff;border:1px solid var(--line);border-radius:6px;padding:26px 30px 12px;box-shadow:0 16px 36px rgba(20,23,28,.07)}
+.wb-remote-list .eyebrow{margin-bottom:8px;font-size:12px}
+.wb-remote-list ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
+.wb-remote-list li{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-top:1px solid var(--line);font-size:16.5px;color:var(--ink);line-height:1.4}
+.wb-remote-list .ico{width:24px;height:24px}
+
+/* example scopes (three cards, no tiers) */
+.wb-plans-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--grid-gap)}
+.wb-plan{background:#fff;border:1px solid var(--line);border-radius:6px;padding:var(--card-pad);display:flex;flex-direction:column}
+.wb-plan h3{font-size:clamp(24px,1.62vw,31px);letter-spacing:-.02em;line-height:1.15}
+.wb-plan-for{color:var(--muted);font-size:17px;margin-top:8px}
+.wb-plan ul{list-style:none;margin:26px 0 34px;padding:0;flex:1}
+.wb-plan li{display:flex;gap:14px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line);font-size:16.5px;color:var(--text);line-height:1.4}
+.wb-plan li .ico{width:20px;height:20px;margin-top:1px}
+.wb-plan .btn{width:100%;justify-content:center;gap:16px;white-space:nowrap}
+.wb-plans .sub strong{font-weight:500;color:var(--ink)}
+
+/* planned maintenance: photo and list */
+.wb-care .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(48px,5vw,104px);align-items:center}
+.wb-care-img{aspect-ratio:1272/1237;overflow:hidden;border-radius:var(--radius);background:var(--band-2)}
+.wb-care-img img{width:100%;height:100%;object-fit:cover}
+.wb-care-text .sub{margin-top:var(--stack)}
+.wb-care-list{list-style:none;margin:clamp(28px,2.6vw,44px) 0 0;padding:0;border-top:1px solid var(--line-strong)}
+.wb-care-list li{display:grid;grid-template-columns:28px minmax(150px,220px) minmax(0,1fr);gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line-strong)}
+.wb-care-list .ico{width:28px;height:28px;color:var(--ink)}
+.wb-care-list strong{font-weight:500;font-size:19px;color:var(--ink)}
+.wb-care-list span{font-size:16.5px;color:var(--muted);line-height:1.45}
+.wb-route{margin-top:clamp(28px,2.6vw,44px);background:var(--band-2);padding:18px 26px;border-radius:var(--radius);font-size:16px;color:var(--ink);display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.wb-route span{color:var(--muted)}
+.wb-route b{display:inline-flex;align-items:center;gap:14px;font-weight:400;white-space:nowrap}
+.wb-route svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;flex:none}
+
+/* included vs. separate */
+.wb-cover-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--grid-gap) clamp(40px,4vw,80px)}
+.wb-cover h3{font-size:21px;margin-bottom:12px}
+.wb-cover ul{list-style:none;margin:0;padding:0}
+.wb-cover li{display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line-strong);font-size:17px;color:var(--text);line-height:1.4}
+.wb-cover li .ico{width:22px;height:22px;color:var(--ink)}
+.wb-out .ico{color:var(--soft)}
+
+/* closing banner: copy left, actions in a second column as in the concept */
+.wb-cta .cta-text{max-width:none;flex:1;display:grid;grid-template-columns:minmax(0,600px) minmax(0,auto);gap:24px 48px;align-items:center}
+.wb-cta .cta-text .sub{margin:var(--stack) 0 0}
+.wb-cta .actions{gap:16px 18px}
+.wb-cta .btn--ghost{background:#fff}
+.wb-cta .btn--ghost:hover{background:var(--ink);color:#fff}
+.wb-direct{display:flex;flex-wrap:wrap;gap:8px 36px;margin-top:22px}
+.wb-direct a{color:var(--ink);text-decoration:none;font-size:17px}
+.wb-direct a:hover{text-decoration:underline}
+.wb-cta .cta-text .small{margin-top:12px;max-width:440px}
+
+@media (max-width:1839px){
+  /* sign text fully in frame, jacket lettering out of frame */
+  .wb-hero .chero-img img{object-position:-345px 50%}
+}
+
+/* responsive */
+@media (max-width:1475px){
+  /* technician with the jacket lettering in frame, the sign text out of frame */
+  .wb-hero .chero-img img{object-position:-30px 50%}
+}
+@media (max-width:1500px){
+  .wb-care-list li{grid-template-columns:28px minmax(0,1fr);row-gap:2px}
+  .wb-care-list span{grid-column:2}
+}
+@media (max-width:1280px){
+  /* example scopes: one card per row, name and button left, list right */
+  .wb-plans-grid{grid-template-columns:1fr}
+  .wb-plan{display:grid;grid-template-columns:minmax(285px,.85fr) minmax(0,1.3fr);grid-template-rows:auto 1fr;column-gap:48px}
+  .wb-plan-head{grid-column:1;grid-row:1}
+  .wb-plan ul{grid-column:2;grid-row:1/3;margin:0}
+  .wb-plan li:first-child{padding-top:0}
+  .wb-plan li:last-child{border-bottom:0;padding-bottom:0}
+  .wb-plan .btn{grid-column:1;grid-row:2;align-self:end;margin-top:24px}
+}
+@media (max-width:1180px){
+  /* five cards as 3 + 2 without an empty slot: six columns, the second row spans wider, all photos keep one height */
+  .wb-cards--5{grid-template-columns:repeat(6,minmax(0,1fr));row-gap:44px;container-type:inline-size}
+  .wb-cards--5 .wb-card{grid-column:span 2}
+  .wb-cards--5 .wb-card:nth-child(n+4){grid-column:span 3}
+  .wb-cards--5 .wb-card-img{aspect-ratio:auto;height:calc((100cqw - 2 * var(--grid-gap)) / 3 * 296 / 340)}
+  .wb-remote .wrap{grid-template-columns:1fr;gap:var(--head-gap)}
+  .wb-cards--4{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:44px}
+  .wb-contexts .wb-card-img{aspect-ratio:4/3}
+  .wb-care .wrap{grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:56px;align-items:start}
+  .wb-cta .cta-text{grid-template-columns:1fr}
+}
+@media (max-width:1180px) and (min-width:961px){
+  /* both hero buttons on one row: a slightly wider text column and compact buttons */
+  .wb-hero .chero-text{max-width:calc(50vw - var(--gutter))}
+  .wb-hero .actions{flex-wrap:nowrap;gap:14px}
+  .wb-hero .actions .btn{padding-left:18px;padding-right:18px;gap:14px;white-space:nowrap}
+}
+@media (max-width:1100px){
+  .wb-hero .chero-img img{object-position:0 50%}
+}
+@media (max-width:960px){
+  .wb-hero .chero-text{max-width:none}
+  .wb-hero .chero-img img{object-position:38% 50%}
+  .wb-hero .actions{flex-wrap:wrap}
+  .wb-care .wrap{grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:40px}
+}
+@media (max-width:760px){
+  /* example scopes stacked: name, list, button */
+  .wb-plan{display:flex}
+  .wb-plan ul{margin:22px 0 28px}
+  .wb-plan li:first-child{padding-top:15px}
+  .wb-plan li:last-child{border-bottom:1px solid var(--line);padding-bottom:15px}
+  .wb-plan .btn{margin-top:0}
+  .wb-cover-cols{grid-template-columns:1fr;row-gap:44px}
+}
+@media (max-width:620px){
+  .wb-hero .actions .btn{width:100%}
+  .wb-cards--5,.wb-cards--4{grid-template-columns:1fr;row-gap:28px}
+  .wb-cards--5 .wb-card,.wb-cards--5 .wb-card:nth-child(n+4){grid-column:auto}
+  .wb-card,.wb-cards--4 .wb-card{display:grid;grid-template-columns:112px minmax(0,1fr);grid-template-rows:auto 1fr;column-gap:18px;align-items:start}
+  .wb-card-img,.wb-cards--5 .wb-card-img{grid-row:1/3;aspect-ratio:1/1;height:auto}
+  .wb-contexts .wb-card-img{aspect-ratio:4/5}
+  .wb-card-t,.wb-cards--4 .wb-card-t{margin-top:2px;font-size:19px}
+  .wb-card-t svg{margin-left:10px}
+  .wb-card-d{margin-top:4px;font-size:16px}
+  .wb-points{grid-template-columns:1fr}
+  .wb-points>div,.wb-points>div:first-child{display:flex;align-items:center;gap:16px;padding:14px 0;border-left:0;border-top:1px solid var(--line-strong)}
+  .wb-points>div:first-child{border-top:0;padding-top:0}
+  .wb-points .ico{width:34px;height:34px;margin:0;flex:none}
+  .wb-remote-list{margin:-28px 14px 0;padding:20px 22px 8px}
+  .wb-remote-list ul{grid-template-columns:1fr}
+  .wb-care .wrap{grid-template-columns:1fr;gap:32px}
+  .wb-care-img{max-width:420px}
+  .wb-cover li{align-items:flex-start}
+  .wb-cta .actions .btn{width:100%}
+}
+/* phones: the headline runs on three lines, so no line ends up with a single word */
+@media (max-width:459px){
+  .wb-hero h1{font-size:min(40px,calc((100vw - 40px) / 8.4))}
+  .wb-hero h1 .wb-m{display:inline}
+  .wb-hero h1 .wb-d{display:none}
+}
+@media (max-width:400px){
+  .wb-card,.wb-cards--4 .wb-card{grid-template-columns:96px minmax(0,1fr);column-gap:16px}
+  .wb-card-t,.wb-cards--4 .wb-card-t{font-size:18px}
+  .wb-plan .btn{padding:16px 14px;gap:10px;font-size:15px}
+}

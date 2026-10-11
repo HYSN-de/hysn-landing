@@ -1,0 +1,11 @@
+// Cloudflare Workers: serves this folder as a static website. There is no build step on Cloudflare;
+// the pages are built locally (python3 _build.py) and committed. Files listed in .assetsignore are not uploaded.
+{
+  "name": "hysn-site",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
