@@ -1,0 +1,6 @@
+# Not part of the public website (Vercel)
+/pages
+/_*.py
+/README.md
+/wrangler.jsonc
+/.assetsignore
