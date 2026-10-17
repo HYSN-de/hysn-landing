@@ -10,7 +10,13 @@ python3 _build.py faq          # build only pages/faq.py
 python3 _serve.py               # preview without browser caching at http://localhost:8080/
 ```
 
-## Deploy (Cloudflare Workers)
+## Live site
+
+https://www.hysn.de is served by Vercel from the `main` branch of `HYSN-de/hysn-landing` (remote `landing` in this repository).
+Publish a change: `python3 _build.py`, commit, `git push landing main` (Vercel deploys within seconds), and `git push origin main` to keep `HYSN-de/hysn-site` in step.
+`.vercelignore` keeps `pages/`, the `_*.py` scripts, this README and the Cloudflare config off the site. The Datenschutz page describes Vercel hosting.
+
+## Deploy (Cloudflare Workers, alternative)
 
 The repository is the website: the built HTML is committed, so Cloudflare needs no build step.
 `wrangler.jsonc` serves this folder as static assets; `.assetsignore` keeps `pages/`, the `_*.py` scripts, this README and the config off the public site.
